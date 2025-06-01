@@ -111,11 +111,11 @@ export default {
             try {
                 localStorage.setItem("nik", this.form.nik);
                 await axios.get(
-                    `http://localhost:8000/api/auth/google?state=${this.form.nik}`
+                    `https://capstonesi.online/api/auth/google?state=${this.form.nik}`
                 );
 
                 const response = await axios.post(
-                    `http://localhost:8000/api/auth/NIK`,
+                    `https://capstonesi.online/api/auth/NIK`,
                     { nik: this.form.nik },
                     {
                         headers: {

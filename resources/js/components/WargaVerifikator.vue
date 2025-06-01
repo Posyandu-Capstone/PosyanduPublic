@@ -154,7 +154,7 @@ export default {
         async viewDetail(user) {
             try {
                 const response = await axios.get(
-                    `http://localhost:8000/api/auth/warga-verifikator/${user.NIK}`, // Ganti ID dengan NIK
+                    `https://capstonesi.online/api/auth/warga-verifikator/${user.NIK}`, // Ganti ID dengan NIK
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem(
@@ -182,7 +182,7 @@ export default {
         async getWargaList() {
             try {
                 const response = await axios.get(
-                    "http://localhost:8000/api/auth/warga-verifikator",
+                    "https://capstonesi.online/api/auth/warga-verifikator",
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem(
@@ -233,7 +233,7 @@ export default {
             try {
                 const newStatus = this.reverseStatus(user.status);
                 await axios.put(
-                    `http://localhost:8000/api/auth/warga-verifikator/${user.NIK}`,
+                    `https://capstonesi.online/api/auth/warga-verifikator/${user.NIK}`,
                     { status: newStatus },
                     {
                         headers: {

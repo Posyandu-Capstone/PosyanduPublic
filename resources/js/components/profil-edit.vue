@@ -104,7 +104,7 @@ export default {
             try {
                 const token = localStorage.getItem("token");
                 const res = await axios.get(
-                    "http://localhost:8000/api/auth/profile",
+                    "https://capstonesi.online/api/auth/profile",
                     {
                         headers: { Authorization: `Bearer ${token}` },
                     }
@@ -136,7 +136,7 @@ export default {
                     formData.append("foto_profil", this.file);
                 }
                 const res = await axios.post(
-                    "http://localhost:8000/api/auth/profile",
+                    "https://capstonesi.online/api/auth/profile",
                     formData,
                     {
                         headers: {

@@ -154,7 +154,7 @@ export default {
         },
         googleLogin() {
             const backendUrl =
-                import.meta.env.VITE_APP_URL || "http://localhost:8000/api";
+                import.meta.env.VITE_APP_URL || "https://capstonesi.online/api";
             window.location.href = `${backendUrl}/auth/google`;
         },
 
@@ -189,7 +189,8 @@ export default {
 
             try {
                 const apiUrl =
-                    import.meta.env.VITE_APP_URL || "http://localhost:8000/api";
+                    import.meta.env.VITE_APP_URL ||
+                    "https://capstonesi.online/api";
                 const response = await axios.post(`${apiUrl}/auth/register`, {
                     email: this.form.email,
                     password: this.form.password,

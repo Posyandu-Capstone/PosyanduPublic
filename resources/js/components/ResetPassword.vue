@@ -88,7 +88,7 @@ export default {
 
             try {
                 const response = await axios.post(
-                    "http://localhost:8000/api/auth/reset-password",
+                    "https://capstonesi.online/api/auth/reset-password",
                     {
                         token: this.token,
                         email: this.email,

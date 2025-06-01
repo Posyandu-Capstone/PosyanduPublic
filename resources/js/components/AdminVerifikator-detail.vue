@@ -111,7 +111,7 @@ export default {
         async getUserDetail(nik) {
             try {
                 const response = await axios.get(
-                    `http://localhost:8000/api/auth/verifikator/${nik}`,
+                    `https://capstonesi.online/api/auth/verifikator/${nik}`,
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem(
@@ -135,7 +135,7 @@ export default {
             try {
                 const newStatus = this.user.status;
                 await axios.put(
-                    `http://localhost:8000/api/auth/verifikator/${this.user.nik}`,
+                    `https://capstonesi.online/api/auth/verifikator/${this.user.nik}`,
                     { status: newStatus },
                     {
                         headers: {

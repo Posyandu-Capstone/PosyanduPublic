@@ -280,7 +280,7 @@ export default {
             if (nik && token) {
                 axios
                     .get(
-                        `http://localhost:8000/api/auth/laporan-kesehatan/${nik}`,
+                        `https://capstonesi.online/api/auth/laporan-kesehatan/${nik}`,
                         {
                             headers: { Authorization: `Bearer ${token}` },
                         }

@@ -118,7 +118,7 @@
 
 <script>
 import axios from "axios";
-import SideBar from "@/components/SideBar.vue";
+import SideBar from "@/components/Sidebar.vue";
 import ModalConfirm from "@/components/ModalConfirm.vue";
 import informasiIcon from "@/assets/Informasi.svg";
 import updateIcon from "@/assets/Edit.svg";
@@ -158,7 +158,7 @@ export default {
                 if (!token) throw new Error("Token tidak ditemukan");
 
                 const response = await axios.get(
-                    "http://localhost:8000/api/auth/posyandu",
+                    "https://capstonesi.online/api/auth/posyandu",
                     {
                         headers: { Authorization: `Bearer ${token}` },
                     }
@@ -185,7 +185,7 @@ export default {
                     await this.fetchPosyandu();
                 } else {
                     const response = await axios.get(
-                        "http://localhost:8000/api/auth/posyandu/search",
+                        "https://capstonesi.online/api/auth/posyandu/search",
                         {
                             params: { search: this.searchQuery },
                             headers: { Authorization: `Bearer ${token}` },
@@ -230,7 +230,7 @@ export default {
                 }
 
                 await axios.delete(
-                    `http://localhost:8000/api/auth/posyandu/${this.posyanduToDelete.id}`,
+                    `https://capstonesi.online/api/auth/posyandu/${this.posyanduToDelete.id}`,
                     {
                         headers: { Authorization: `Bearer ${token}` },
                     }

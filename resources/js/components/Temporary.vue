@@ -88,7 +88,7 @@ export default {
         async fetchLocations() {
             try {
                 const apiUrl =
-                    import.meta.env.APP_URL || "http://localhost:8000/api";
+                    import.meta.env.APP_URL || "https://capstonesi.online/api";
                 const response = await axios.get(`${apiUrl}/auth/kecamatan`, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(
@@ -116,7 +116,7 @@ export default {
             }
 
             const apiUrl =
-                import.meta.env.APP_URL || "http://localhost:8000/api";
+                import.meta.env.APP_URL || "https://capstonesi.online/api";
             const endpoint =
                 this.currentAction === "create"
                     ? "kecamatan"
@@ -153,7 +153,7 @@ export default {
         async deleteLocation(id) {
             try {
                 const apiUrl =
-                    import.meta.env.APP_URL || "http://localhost:8000/api";
+                    import.meta.env.APP_URL || "https://capstonesi.online/api";
                 await axios.delete(`${apiUrl}/auth/kecamatan/${id}`, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(

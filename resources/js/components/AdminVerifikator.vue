@@ -156,7 +156,7 @@ export default {
         async viewDetail(user) {
             try {
                 const response = await axios.get(
-                    `http://localhost:8000/api/auth/verifikator/${user.NIK}`,
+                    `https://capstonesi.online/api/auth/verifikator/${user.NIK}`,
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem(
@@ -188,7 +188,7 @@ export default {
         async getAdminList() {
             try {
                 const response = await axios.get(
-                    "http://localhost:8000/api/auth/verifikator",
+                    "https://capstonesi.online/api/auth/verifikator",
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem(
@@ -239,7 +239,7 @@ export default {
             try {
                 const newStatus = this.reverseStatus(user.status);
                 await axios.put(
-                    `http://localhost:8000/api/auth/verifikator/${user.NIK}`,
+                    `https://capstonesi.online/api/auth/verifikator/${user.NIK}`,
                     { status: newStatus },
                     {
                         headers: {

@@ -269,7 +269,7 @@ export default {
             }
 
             // Menyusun URL dengan parameter search jika ada
-            let url = `http://localhost:8000/api/auth/laporan/search?`;
+            let url = `https://capstonesi.online/api/auth/laporan/search?`;
             if (this.searchQuery) {
                 url += `nama=${encodeURIComponent(this.searchQuery)}&`;
             }
@@ -317,7 +317,7 @@ export default {
             }
 
             axios
-                .get("http://localhost:8000/api/auth/laporan-kesehatan", {
+                .get("https://capstonesi.online/api/auth/laporan-kesehatan", {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -352,7 +352,7 @@ export default {
         fetchPoskoOptions() {
             const token = localStorage.getItem("token");
             axios
-                .get("http://localhost:8000/api/auth/poskoAllow", {
+                .get("https://capstonesi.online/api/auth/poskoAllow", {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -397,7 +397,7 @@ export default {
 
             axios
                 .delete(
-                    `http://localhost:8000/api/auth/laporan-kesehatan/${pasienNik}`,
+                    `https://capstonesi.online/api/auth/laporan-kesehatan/${pasienNik}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,

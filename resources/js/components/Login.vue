@@ -145,13 +145,14 @@ export default {
         },
         loginWithGoogle() {
             const backendUrl =
-                import.meta.env.VITE_APP_URL || "http://localhost:8000/api";
+                import.meta.env.VITE_APP_URL || "https://capstonesi.online/api";
             window.location.href = `${backendUrl}/auth/google`;
         },
         async login() {
             try {
                 const apiUrl =
-                    import.meta.env.VITE_APP_URL || "http://localhost:8000/api";
+                    import.meta.env.VITE_APP_URL ||
+                    "https://capstonesi.online/api";
                 const { data } = await axios.post(
                     `${apiUrl}/auth/login`,
                     this.form,

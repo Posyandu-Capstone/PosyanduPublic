@@ -117,7 +117,7 @@ export default {
 
             axios
                 .post(
-                    "http://localhost:8000/api/auth/pemeriksaan",
+                    "https://capstonesi.online/api/auth/pemeriksaan",
                     {
                         user_id: this.formData.WargaNIK,
                         berita_id: this.formData.beritaId,

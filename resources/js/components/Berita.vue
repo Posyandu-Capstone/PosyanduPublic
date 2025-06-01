@@ -142,7 +142,7 @@ export default {
                 const token = localStorage.getItem("token");
                 if (!token) throw new Error("Token tidak ditemukan");
                 const response = await axios.get(
-                    "http://localhost:8000/api/auth/berita",
+                    "https://capstonesi.online/api/auth/berita",
                     {
                         headers: { Authorization: `Bearer ${token}` },
                     }
@@ -171,7 +171,7 @@ export default {
                 const token = localStorage.getItem("token");
                 if (!token) throw new Error("Token tidak ditemukan");
                 await axios.delete(
-                    `http://localhost:8000/api/auth/berita/${this.beritaToDelete.id}`,
+                    `https://capstonesi.online/api/auth/berita/${this.beritaToDelete.id}`,
                     {
                         headers: { Authorization: `Bearer ${token}` },
                     }
