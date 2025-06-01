@@ -1,0 +1,21 @@
+<!-- 400.shtml -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>400 - Permintaanmu Bingungin Aku</title>
+  <style>
+    body { font-family: 'Comic Sans MS', cursive, sans-serif; background: #ffe6e6; text-align: center; padding: 50px; }
+    h1 { font-size: 3rem; color: #ff4d4d; }
+    p { font-size: 1.5rem; }
+    img { max-width: 300px; }
+  </style>
+</head>
+<body>
+  <img src="https://http.cat/400" alt="400 Bad Request" />
+  <h1>400 - Permintaanmu Bingungin Aku 😵</h1>
+  <p>Coba periksa kembali permintaanmu yaa. Ini bikin server mikir keras 🤯</p>
+  <a href="/">Balik ke rumah 🏠</a>
+</body>
+</html>

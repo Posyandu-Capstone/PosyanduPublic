@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>500 - Servernya Kelelep</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fff3cd; text-align: center; padding: 50px; }
+    h1 { font-size: 3rem; color: #856404; }
+    p { font-size: 1.4rem; }
+  </style>
+</head>
+<body>
+  <h1>500 - Server Lagi Drama 🎭</h1>
+  <p>Kami sedang mencoba menenangkan server yang overthinking... 🤖💥</p>
+  <a href="/">Coba Lagi Nanti 🔁</a>
+</body>
+</html>

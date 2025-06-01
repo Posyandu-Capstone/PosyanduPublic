@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>401 - Siapa Kamu?</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fff0f5; text-align: center; padding: 50px; }
+    h1 { font-size: 3rem; color: #ff69b4; }
+    p { font-size: 1.3rem; }
+  </style>
+</head>
+<body>
+  <h1>401 - Kamu Belum Punya Tiket! 🎟️</h1>
+  <p>Login dulu dong biar bisa masuk 😜</p>
+  <a href="/login">Yuk Login!</a>
+</body>
+</html>

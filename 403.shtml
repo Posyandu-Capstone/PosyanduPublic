@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>403 - Dilarang Masuk!</title>
+  <style>
+    body { font-family: monospace; background: #fefefe; text-align: center; padding: 50px; }
+    h1 { font-size: 2.5rem; color: #ff3333; }
+    p { font-size: 1.2rem; }
+  </style>
+</head>
+<body>
+  <h1>403 - Akses Ditolak! 🙅‍♂️</h1>
+  <p>Ini bukan tempatmu. Pergi sana sebelum dipanggil satpam! 😤</p>
+  <a href="/">Balik ke halaman aman 🛡️</a>
+</body>
+</html>
