@@ -246,16 +246,11 @@ export default {
 
         // Ambil data anggota
         axios
-            .get(
-                `https://capstonesi.online/api/auth/riwayat_pemeriksaan/${id}`,
-                {
-                    headers: {
-                        Authorization: `Bearer ${localStorage.getItem(
-                            "token"
-                        )}`,
-                    },
-                }
-            )
+            .get(`http://localhost:8000/api/auth/riwayat_pemeriksaan/${id}`, {
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem("token")}`,
+                },
+            })
             .then((response) => {
                 const data = response.data?.data;
                 if (data?.pemeriksaan?.anggota_keluarga) {
@@ -275,7 +270,7 @@ export default {
 
         // Ambil data riwayat pemeriksaan
         axios
-            .get(`https://capstonesi.online/api/auth/pemeriksaan/${id}`, {
+            .get(`http://localhost:8000/api/auth/pemeriksaan/${id}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },
@@ -339,7 +334,7 @@ export default {
 
             axios
                 .delete(
-                    `https://capstonesi.online/api/auth/pemeriksaan/${this.itemToDelete.id}`,
+                    `http://localhost:8000/api/auth/pemeriksaan/${this.itemToDelete.id}`,
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem(

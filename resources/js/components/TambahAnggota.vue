@@ -265,7 +265,7 @@ export default {
             const token = localStorage.getItem("token");
             axios
                 .post(
-                    "https://capstonesi.online/api/auth/laporan-kesehatan",
+                    "http://localhost:8000/api/auth/laporan-kesehatan",
                     data,
                     {
                         headers: {
@@ -361,7 +361,7 @@ export default {
             try {
                 const token = localStorage.getItem("token");
                 const response = await axios.get(
-                    "https://capstonesi.online/api/auth/dusun",
+                    "http://localhost:8000/api/auth/dusun",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,

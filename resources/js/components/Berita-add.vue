@@ -171,7 +171,7 @@ export default {
 
             const token = localStorage.getItem("token");
             axios
-                .post("https://capstonesi.online/api/auth/berita", data, {
+                .post("http://localhost:8000/api/auth/berita", data, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

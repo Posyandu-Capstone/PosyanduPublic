@@ -21,7 +21,7 @@ export default {
         if (tokenMatch && emailMatch) {
             const token = decodeURIComponent(tokenMatch[1]);
             const email = decodeURIComponent(emailMatch[1]);
-            const apiUrl = "https://capstonesi.online/api";
+            const apiUrl = "http://localhost:8000/api";
 
             try {
                 const userResponse = await fetch(

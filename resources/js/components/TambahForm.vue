@@ -366,17 +366,13 @@ export default {
             };
 
             axios
-                .post(
-                    "https://capstonesi.online/api/auth/pemeriksaan",
-                    payload,
-                    {
-                        headers: {
-                            Authorization: `Bearer ${localStorage.getItem(
-                                "token"
-                            )}`,
-                        },
-                    }
-                )
+                .post("http://localhost:8000/api/auth/pemeriksaan", payload, {
+                    headers: {
+                        Authorization: `Bearer ${localStorage.getItem(
+                            "token"
+                        )}`,
+                    },
+                })
                 .then((response) => {
                     console.log("Data berhasil dikirim:", response.data);
                     // bisa redirect atau tampilkan notifikasi
@@ -403,16 +399,11 @@ export default {
 
         // Ambil data anggota dan detail pemeriksaan terbaru
         axios
-            .get(
-                `https://capstonesi.online/api/auth/riwayat_pemeriksaan/${id}`,
-                {
-                    headers: {
-                        Authorization: `Bearer ${localStorage.getItem(
-                            "token"
-                        )}`,
-                    },
-                }
-            )
+            .get(`http://localhost:8000/api/auth/riwayat_pemeriksaan/${id}`, {
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem("token")}`,
+                },
+            })
             .then((response) => {
                 const data = response.data?.data;
                 if (

@@ -61,7 +61,7 @@ export default {
     methods: {
         sendResetLink() {
             axios
-                .post("https://capstonesi.online/api/auth/forgot-password", {
+                .post("http://localhost:8000/api/auth/forgot-password", {
                     email: this.form.email,
                 })
                 .then((response) => {

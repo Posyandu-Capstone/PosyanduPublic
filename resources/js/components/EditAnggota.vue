@@ -269,7 +269,7 @@ export default {
             if (nik && token) {
                 axios
                     .get(
-                        `https://capstonesi.online/api/auth/laporan-kesehatan/${nik}`,
+                        `http://localhost:8000/api/auth/laporan-kesehatan/${nik}`,
                         {
                             headers: { Authorization: `Bearer ${token}` },
                         }
@@ -375,7 +375,7 @@ export default {
             if (id) {
                 axios
                     .put(
-                        `https://capstonesi.online/api/auth/laporan-kesehatan/${id}`,
+                        `http://localhost:8000/api/auth/laporan-kesehatan/${id}`,
                         data,
                         {
                             headers: { Authorization: `Bearer ${token}` },
@@ -405,7 +405,7 @@ export default {
             } else {
                 axios
                     .post(
-                        "https://capstonesi.online/api/auth/laporan-kesehatan",
+                        "http://localhost:8000/api/auth/laporan-kesehatan",
                         data,
                         {
                             headers: { Authorization: `Bearer ${token}` },
@@ -430,7 +430,7 @@ export default {
             try {
                 const token = localStorage.getItem("token");
                 const response = await axios.get(
-                    "https://capstonesi.online/api/auth/dusun",
+                    "http://localhost:8000/api/auth/dusun",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,

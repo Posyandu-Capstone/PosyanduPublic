@@ -197,8 +197,7 @@ export default {
         async fetchPosko() {
             try {
                 const apiUrl =
-                    import.meta.env.VITE_APP_URL ||
-                    "https://capstonesi.online/api";
+                    import.meta.env.VITE_APP_URL || "http://localhost:8000/api";
                 const token = localStorage.getItem("auth_token");
 
                 console.log("Token yang digunakan untuk ambil posko:", token);
@@ -244,7 +243,7 @@ export default {
 
             const headers = { Authorization: `Bearer ${token}` };
             try {
-                const apiUrl = "https://capstonesi.online/api";
+                const apiUrl = "http://localhost:8000/api";
 
                 // const checkResponse = await axios.get(
                 //     `${apiUrl}/auth/user?email=${email}`,
@@ -302,7 +301,7 @@ export default {
                 try {
                     const apiUrl =
                         import.meta.env.VITE_APP_URL ||
-                        "https://capstonesi.online/api";
+                        "http://localhost:8000/api";
 
                     const response = await axios.post(
                         `${apiUrl}/auth/update`,

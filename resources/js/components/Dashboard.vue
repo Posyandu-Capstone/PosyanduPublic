@@ -167,8 +167,7 @@ export default {
         async fetchAgeGroups() {
             try {
                 const apiUrl =
-                    import.meta.env.VITE_APP_URL ||
-                    "https://capstonesi.online/api";
+                    import.meta.env.VITE_APP_URL || "http://localhost:8000/api";
                 const token = localStorage.getItem("token");
 
                 if (!token) {
@@ -202,8 +201,7 @@ export default {
         async fetchStatisticsBalita() {
             try {
                 const apiUrl =
-                    import.meta.env.VITE_APP_URL ||
-                    "https://capstonesi.online/api";
+                    import.meta.env.VITE_APP_URL || "http://localhost:8000/api";
                 const token = localStorage.getItem("token");
 
                 if (!token) {

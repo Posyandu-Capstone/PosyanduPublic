@@ -173,7 +173,7 @@ export default {
             const token = localStorage.getItem("token");
 
             axios
-                .get(`https://capstonesi.online/api/auth/berita/${id}`, {
+                .get(`http://localhost:8000/api/auth/berita/${id}`, {
                     headers: { Authorization: `Bearer ${token}` },
                     Accept: "application/json",
                 })
@@ -202,7 +202,7 @@ export default {
             const token = localStorage.getItem("token");
 
             axios
-                .get(`https://capstonesi.online/api/auth/antrian/${beritaId}`, {
+                .get(`http://localhost:8000/api/auth/antrian/${beritaId}`, {
                     headers: { Authorization: `Bearer ${token}` },
                     Accept: "application/json",
                 })

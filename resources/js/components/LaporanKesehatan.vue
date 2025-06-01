@@ -47,8 +47,8 @@
 <script>
 import Sidebar from "@/components/Sidebar.vue";
 import HeaderBar from "@/components/HeaderBar.vue";
-import informasiIcon from "@/assets/Info.svg";
-import updateIcon from "@/assets/Edit.svg";
+import informasiIcon from "@/assets/info.svg";
+import updateIcon from "@/assets/edit.svg";
 import axios from "axios";
 
 export default {
@@ -71,7 +71,7 @@ export default {
             try {
                 const token = localStorage.getItem("token");
                 const response = await axios.get(
-                    "https://capstonesi.online/api/auth/laporan",
+                    "http://localhost:8000/api/auth/laporan",
                     {
                         headers: { Authorization: `Bearer ${token}` },
                     }

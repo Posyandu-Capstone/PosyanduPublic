@@ -296,16 +296,11 @@ export default {
 
         // Ambil data anggota dan detail pemeriksaan terbaru
         axios
-            .get(
-                `https://capstonesi.online/api/auth/riwayat_pemeriksaan/${id}`,
-                {
-                    headers: {
-                        Authorization: `Bearer ${localStorage.getItem(
-                            "token"
-                        )}`,
-                    },
-                }
-            )
+            .get(`http://localhost:8000/api/auth/riwayat_pemeriksaan/${id}`, {
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem("token")}`,
+                },
+            })
             .then((response) => {
                 const data = response.data?.data;
                 if (
@@ -325,7 +320,7 @@ export default {
 
         axios
             .get(
-                `https://capstonesi.online/api/auth/pemeriksaan_balita/${pemeriksaanId}`,
+                `http://localhost:8000/api/auth/pemeriksaan_balita/${pemeriksaanId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(

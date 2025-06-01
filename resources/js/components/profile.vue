@@ -122,7 +122,7 @@ export default {
                     return;
                 }
                 const response = await axios.get(
-                    `https://capstonesi.online/api/auth/profile`,
+                    `http://localhost:8000/api/auth/profile`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,

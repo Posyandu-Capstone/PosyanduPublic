@@ -221,7 +221,7 @@ export default {
         logout() {
             axios
                 .post(
-                    "https://capstonesi.online/api/auth/logout",
+                    "http://localhost:8000/api/auth/logout",
                     {},
                     {
                         headers: {

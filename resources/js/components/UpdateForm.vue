@@ -288,7 +288,7 @@ export default {
         // Ambil detail pemeriksaan
         axios
             .get(
-                `https://capstonesi.online/api/auth/pemeriksaan_balita/${pemeriksaanId}`,
+                `http://localhost:8000/api/auth/pemeriksaan_balita/${pemeriksaanId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(
@@ -322,16 +322,11 @@ export default {
 
         // Ambil data anggota
         axios
-            .get(
-                `https://capstonesi.online/api/auth/riwayat_pemeriksaan/${id}`,
-                {
-                    headers: {
-                        Authorization: `Bearer ${localStorage.getItem(
-                            "token"
-                        )}`,
-                    },
-                }
-            )
+            .get(`http://localhost:8000/api/auth/riwayat_pemeriksaan/${id}`, {
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem("token")}`,
+                },
+            })
             .then((response) => {
                 const data = response.data?.data;
                 if (data?.pemeriksaan?.anggota_keluarga) {
@@ -415,7 +410,7 @@ export default {
 
             axios
                 .patch(
-                    `https://capstonesi.online/api/auth/pemeriksaan/${id}`,
+                    `http://localhost:8000/api/auth/pemeriksaan/${id}`,
                     {
                         tanggal_periksa: tanggalFormatted,
                         berat_badan: this.formData.beratBadan,

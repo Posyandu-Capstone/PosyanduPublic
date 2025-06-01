@@ -79,7 +79,7 @@
 
 <script>
 import axios from "axios";
-import SideBar from "@/components/Sidebar.vue";
+import SideBar from "@/components/SideBar.vue";
 import HeaderBar from "@/components/HeaderBar.vue";
 import SuccessAlert from "@/components/SuccessAlert.vue";
 
@@ -114,14 +114,14 @@ export default {
             const token = localStorage.getItem("token");
 
             const kecamatanRequest = axios.get(
-                "https://capstonesi.online/api/auth/kecamatan",
+                "http://localhost:8000/api/auth/kecamatan",
                 {
                     headers: { Authorization: `Bearer ${token}` },
                 }
             );
 
             const desaRequest = axios.get(
-                "https://capstonesi.online/api/auth/desa",
+                "http://localhost:8000/api/auth/desa",
                 {
                     headers: { Authorization: `Bearer ${token}` },
                 }
@@ -146,7 +146,7 @@ export default {
             const token = localStorage.getItem("token");
 
             axios
-                .get(`https://capstonesi.online/api/auth/posyandu/${id}`, {
+                .get(`http://localhost:8000/api/auth/posyandu/${id}`, {
                     headers: { Authorization: `Bearer ${token}` },
                 })
                 .then((response) => {
@@ -176,7 +176,7 @@ export default {
 
             axios
                 .put(
-                    `https://capstonesi.online/api/auth/posyandu/${id}`,
+                    `http://localhost:8000/api/auth/posyandu/${id}`,
                     {
                         nama_posyandu: this.form.namaPosyandu,
                         alamat: this.form.alamat,

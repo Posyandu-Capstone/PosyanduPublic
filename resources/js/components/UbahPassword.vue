@@ -134,7 +134,7 @@ export default {
                 const token = localStorage.getItem("token");
 
                 const res = await axios.post(
-                    "https://capstonesi.online/api/auth/profile/password",
+                    "http://localhost:8000/api/auth/profile/password",
                     this.passwordForm,
                     {
                         headers: { Authorization: `Bearer ${token}` },

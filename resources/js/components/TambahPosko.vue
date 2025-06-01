@@ -80,7 +80,7 @@
 
 <script>
 import axios from "axios";
-import SideBar from "@/components/Sidebar.vue";
+import SideBar from "@/components/SideBar.vue";
 import HeaderBar from "@/components/HeaderBar.vue";
 import SuccessAlert from "./SuccessAlert.vue";
 
@@ -115,14 +115,14 @@ export default {
             const token = localStorage.getItem("token");
 
             const kecamatanRequest = axios.get(
-                "https://capstonesi.online/api/auth/kecamatan",
+                "http://localhost:8000/api/auth/kecamatan",
                 {
                     headers: { Authorization: `Bearer ${token}` },
                 }
             );
 
             const desaRequest = axios.get(
-                "https://capstonesi.online/api/auth/desa",
+                "http://localhost:8000/api/auth/desa",
                 {
                     headers: { Authorization: `Bearer ${token}` },
                 }
@@ -151,7 +151,7 @@ export default {
 
             axios
                 .post(
-                    `https://capstonesi.online/api/auth/posyandu`,
+                    `http://localhost:8000/api/auth/posyandu`,
                     {
                         nama_posyandu: this.form.namaPosyandu,
                         alamat: this.form.alamat,
