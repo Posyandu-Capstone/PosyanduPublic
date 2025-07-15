@@ -1,5 +1,5 @@
 # 🎓 Capstone Project S1B — **POSYANDU Management System** 💻🧒👩‍⚕️
-
+Project hanya milik kami
 
 > **"Digitalisasi pelayanan Posyandu untuk masa depan kesehatan anak yang lebih baik."**
 
